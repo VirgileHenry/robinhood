@@ -1,0 +1,19 @@
+[package]
+name = "robinhood"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+crossterm = "0.29.0"
+dirs = "7.0.0"
+futures = "0.3.34"
+hound = "3.5.1"
+librespot-connect =  { git = "https://github.com/VirgileHenry/librespot" }
+librespot-core =  { git = "https://github.com/VirgileHenry/librespot" }
+librespot-metadata = { git = "https://github.com/VirgileHenry/librespot" }
+librespot-oauth =  { git = "https://github.com/VirgileHenry/librespot" }
+librespot-playback = { git = "https://github.com/VirgileHenry/librespot" }
+ratatui = "0.30.2"
+tokio = { version = "1.53.3", features = ["signal"] }
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.23", features = ["env-filter"] }

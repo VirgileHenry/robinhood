@@ -1,0 +1,83 @@
+2026-10-16T11:28:58.837789Z  INFO robinhood: Hello, Robin Hood
+2026-10-16T11:28:58.838296Z  WARN librespot_core::cache: credential file "/home/eclipse/.cache/robin-hood/credentials.json" is currently world readable, consider using  chmod 600 "/home/eclipse/.cache/robin-hood/credentials.json" to fix this
+2026-10-16T11:28:58.838483Z DEBUG librespot_core::session: new Session
+2026-10-16T11:28:58.838519Z  INFO librespot_playback::mixer::softmixer: Mixing with softvol and volume control: Log(60.0)
+2026-10-16T11:28:58.838642Z DEBUG librespot_playback::player: new Player [0]
+2026-10-16T11:28:58.838660Z DEBUG librespot_connect::spirc: new Spirc[0]
+2026-10-16T11:28:58.838742Z  INFO librespot_playback::convert: Converting with ditherer: tpdf
+2026-10-16T11:28:58.838754Z DEBUG librespot::component: new DealerManager
+2026-10-16T11:28:58.838766Z  INFO librespot_playback::audio_backend::rodio: Using Rodio sink with format S16 and cpal host: ALSA
+2026-10-16T11:28:58.838778Z  INFO librespot_playback::audio_backend::rodio: Using audio device: default
+2026-10-16T11:28:58.838854Z DEBUG librespot::component: new SpClient
+2026-10-16T11:28:58.838872Z DEBUG librespot_core::spclient: Client token unavailable or expired, requesting new token.
+2026-10-16T11:28:58.838982Z DEBUG librespot_core::http_client: Requesting https://clienttoken.spotify.com/v1/clienttoken
+2026-10-16T11:28:58.850593Z DEBUG librespot_playback::audio_backend::rodio: Rodio sink was created
+2026-10-16T11:28:58.851321Z DEBUG librespot_playback::player: command=AddEventSender
+2026-10-16T11:28:58.895071Z DEBUG hyper_util::client::legacy::connect::http: connecting to [2600:1901:1:7c5::]:443
+2026-10-16T11:28:58.916126Z DEBUG hyper_util::client::legacy::connect::http: connected to [2600:1901:1:7c5::]:443
+2026-10-16T11:28:59.002480Z DEBUG hyper_util::client::legacy::pool: pooling idle connection for ("https", clienttoken.spotify.com)
+2026-10-16T11:28:59.002647Z DEBUG librespot_core::spclient: Received a granted token
+2026-10-16T11:28:59.002718Z DEBUG librespot::component: new ApResolver
+2026-10-16T11:28:59.002760Z DEBUG librespot_core::http_client: Requesting https://apresolve.spotify.com/?type=accesspoint&type=dealer&type=spclient
+2026-10-16T11:28:59.025791Z DEBUG hyper_util::client::legacy::connect::http: connecting to [2600:1901:1:7c5::]:443
+2026-10-16T11:28:59.043990Z DEBUG hyper_util::client::legacy::connect::http: connected to [2600:1901:1:7c5::]:443
+2026-10-16T11:28:59.114792Z  INFO librespot_core::session: Connecting to AP "ap-gew1.spotify.com:4070"
+2026-10-16T11:28:59.114745Z DEBUG hyper_util::client::legacy::pool: pooling idle connection for ("https", apresolve.spotify.com)
+2026-10-16T11:28:59.162371Z DEBUG librespot_core::connection: Connection to AP established.
+2026-10-16T11:28:59.204610Z DEBUG librespot_core::connection: Authenticating with AP using AUTHENTICATION_STORED_SPOTIFY_CREDENTIALS
+2026-10-16T11:28:59.261508Z  INFO librespot_core::session: Authenticated as '31ppfo6kcgfcd2ojbpwqz54ajwoq' !
+2026-10-16T11:28:59.261712Z  WARN librespot_core::cache: credential file "/home/eclipse/.cache/robin-hood/credentials.json" is currently world readable, consider using  chmod 600 "/home/eclipse/.cache/robin-hood/credentials.json" to fix this
+2026-10-16T11:28:59.262083Z DEBUG librespot::component: new Login5Manager
+2026-10-16T11:28:59.262257Z DEBUG librespot_core::http_client: Requesting https://login5.spotify.com/v3/login
+2026-10-16T11:28:59.262305Z DEBUG librespot_core::session: Session strong=5 weak=6
+2026-10-16T11:28:59.262456Z  INFO librespot_core::session: Country: "FR"
+2026-10-16T11:28:59.280780Z DEBUG librespot::component: new MercuryManager
+2026-10-16T11:28:59.284512Z DEBUG hyper_util::client::legacy::connect::http: connecting to [2600:1901:1:7c5::]:443
+2026-10-16T11:28:59.302144Z DEBUG hyper_util::client::legacy::connect::http: connected to [2600:1901:1:7c5::]:443
+2026-10-16T11:28:59.392471Z DEBUG librespot_connect::spirc: SpircTask::set_volume(32767)
+2026-10-16T11:28:59.392574Z DEBUG librespot_playback::mixer::mappings: Input volume 32767 mapped to: 3.16%
+2026-10-16T11:28:59.392484Z DEBUG librespot_playback::player: command=AddEventSender
+2026-10-16T11:28:59.392625Z  INFO robinhood::spot: connected as 31ppfo6kcgfcd2ojbpwqz54ajwoq — look for "Robin Hood" in your devices list
+2026-10-16T11:28:59.392749Z DEBUG librespot_core::dealer::manager: Launching dealer
+2026-10-16T11:28:59.392794Z DEBUG hyper_util::client::legacy::pool: pooling idle connection for ("https", login5.spotify.com)
+2026-10-16T11:28:59.558232Z DEBUG tungstenite::handshake::client: Client handshake done.
+2026-10-16T11:28:59.561765Z  INFO librespot_core::spclient: Resolved "gew1-spclient.spotify.com:443" as spclient access point
+2026-10-16T11:28:59.561857Z DEBUG librespot_core::http_client: Requesting https://gew1-spclient.spotify.com:443/connect-state/v1/devices/91fd9124-1e06-45ce-ad17-5aa5fc16d2fa?product=0&country=FR&salt=4121700526
+2026-10-16T11:28:59.588471Z DEBUG hyper_util::client::legacy::connect::http: connecting to [2600:1901:1:5a5::]:443
+2026-10-16T11:28:59.611148Z DEBUG hyper_util::client::legacy::connect::http: connected to [2600:1901:1:5a5::]:443
+2026-10-16T11:28:59.961056Z DEBUG hyper_util::client::legacy::pool: pooling idle connection for ("https", gew1-spclient.spotify.com:443)
+2026-10-16T11:28:59.961335Z DEBUG librespot_connect::spirc: successfully put connect state for 91fd9124-1e06-45ce-ad17-5aa5fc16d2fa with connection-id MzI0YzY4ZWMtNmJlYy00NjExLTgwNWItYWRiOTI3ZTY0NWZlK2RlYWxlcit0Y3A6Ly8wYTBlMWY0Mi5pcC5nZXcxLnNwb3RpZnkubmV0OjU3MDArNzc4MjUzM0VBN0QxMzk4QTJDMUE5QjY5NTFCQjQ4NDM4NTFCNzhGNDQxMEU3QjZFRTEzRjU2NjE2RUFDMjE3Mw==
+2026-10-16T11:28:59.961375Z  INFO librespot_connect::spirc: active device is <> with session <d8a9b51b5946437da36e2af60b2f16bd>
+2026-10-16T11:29:00.656605Z DEBUG librespot_connect::state: update position to 29869169:00 at 11:29:00.656
+2026-10-16T11:29:00.656685Z DEBUG librespot_connect::state: updated connect play status playing: true, paused: true, buffering: true
+2026-10-16T11:29:00.657025Z DEBUG librespot_core::http_client: Requesting https://gew1-spclient.spotify.com:443/connect-state/v1/devices/91fd9124-1e06-45ce-ad17-5aa5fc16d2fa?product=0&country=FR&salt=350347076
+2026-10-16T11:29:00.657173Z DEBUG hyper_util::client::legacy::pool: reuse idle connection for ("https", gew1-spclient.spotify.com:443)
+2026-10-16T11:29:00.726502Z DEBUG hyper_util::client::legacy::pool: pooling idle connection for ("https", gew1-spclient.spotify.com:443)
+2026-10-16T11:29:00.726628Z  WARN librespot_connect::state::context: couldn't load context info because: context is not available. type: Default
+2026-10-16T11:29:00.726888Z DEBUG librespot_core::http_client: Requesting https://gew1-spclient.spotify.com:443/connect-state/v1/devices/91fd9124-1e06-45ce-ad17-5aa5fc16d2fa/inactive?notify=false&product=0&country=FR&salt=3524320961
+2026-10-16T11:29:00.727078Z DEBUG hyper_util::client::legacy::pool: reuse idle connection for ("https", gew1-spclient.spotify.com:443)
+2026-10-16T11:29:00.759315Z DEBUG hyper_util::client::legacy::pool: pooling idle connection for ("https", gew1-spclient.spotify.com:443)
+2026-10-16T11:29:00.759402Z DEBUG librespot_connect::state: updated connect play status playing: true, paused: true, buffering: true
+2026-10-16T11:29:00.759422Z DEBUG librespot_playback::player: command=EmitSessionDisconnectedEvent("MzI0YzY4ZWMtNmJlYy00NjExLTgwNWItYWRiOTI3ZTY0NWZlK2RlYWxlcit0Y3A6Ly8wYTBlMWY0Mi5pcC5nZXcxLnNwb3RpZnkubmV0OjU3MDArNzc4MjUzM0VBN0QxMzk4QTJDMUE5QjY5NTFCQjQ4NDM4NTFCNzhGNDQxMEU3QjZFRTEzRjU2NjE2RUFDMjE3Mw==", "31ppfo6kcgfcd2ojbpwqz54ajwoq")
+2026-10-16T11:29:00.759566Z DEBUG librespot_core::http_client: Requesting https://gew1-spclient.spotify.com:443/connect-state/v1/devices/91fd9124-1e06-45ce-ad17-5aa5fc16d2fa?product=0&country=FR&salt=3123330745
+2026-10-16T11:29:00.759628Z DEBUG hyper_util::client::legacy::pool: reuse idle connection for ("https", gew1-spclient.spotify.com:443)
+2026-10-16T11:29:00.802437Z DEBUG hyper_util::client::legacy::pool: pooling idle connection for ("https", gew1-spclient.spotify.com:443)
+2026-10-16T11:29:00.802550Z DEBUG librespot_core::http_client: Requesting https://gew1-spclient.spotify.com:443/connect-state/v1/devices/91fd9124-1e06-45ce-ad17-5aa5fc16d2fa?product=0&country=FR&salt=51606827
+2026-10-16T11:29:00.802708Z DEBUG hyper_util::client::legacy::pool: reuse idle connection for ("https", gew1-spclient.spotify.com:443)
+2026-10-16T11:29:00.831256Z DEBUG hyper_util::client::legacy::pool: pooling idle connection for ("https", gew1-spclient.spotify.com:443)
+2026-10-16T11:29:00.831367Z DEBUG librespot_core::dealer: closing dealer
+2026-10-16T11:29:00.831552Z DEBUG librespot_core::dealer: Dropping send task
+2026-10-16T11:29:00.852678Z DEBUG tungstenite::protocol: Received close frame: None
+2026-10-16T11:29:00.854220Z DEBUG librespot_core::dealer: Websocket connection closed.
+2026-10-16T11:29:00.855564Z DEBUG librespot_core::dealer: Dropping receive task
+2026-10-16T11:29:00.855653Z DEBUG librespot_connect::spirc: drop Spirc[0]
+2026-10-16T11:29:00.855662Z DEBUG librespot_playback::player: Shutting down player thread ...
+2026-10-16T11:29:00.855737Z DEBUG librespot_playback::player: drop PlayerInternal[0]
+2026-10-16T11:29:00.857742Z DEBUG librespot_playback::player: PlayerInternal thread finished.
+2026-10-16T11:29:00.858292Z DEBUG librespot_core::session: drop Session
+2026-10-16T11:29:00.859793Z DEBUG librespot::component: drop ApResolver
+2026-10-16T11:29:00.859813Z DEBUG librespot::component: drop MercuryManager
+2026-10-16T11:29:00.859821Z DEBUG librespot::component: drop DealerManager
+2026-10-16T11:29:00.859829Z DEBUG librespot::component: drop SpClient
+2026-10-16T11:29:00.859836Z DEBUG librespot::component: drop Login5Manager
+2026-10-16T11:29:00.860124Z DEBUG librespot_core::session: drop Dispatch
